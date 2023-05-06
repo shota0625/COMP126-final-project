@@ -1,0 +1,447 @@
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+   /*header-styling*/
+  
+   header {
+    display: flex;
+    align-items: center;
+    background-color:#1F456E;
+  }
+  .titlepg {
+    flex: 1; 
+    justify-content: flex-start;
+    font-size: 2rem;
+  }
+    .header {
+        font-family: 'Nunito Sans', sans-serif;
+        padding: 0;
+        width: 100%;
+    }
+    .Logo {
+        font-size: 1.25rem;
+    }
+
+    @media screen and (max-width: 800px) {
+      .logo {
+        display: none;
+      }
+      #titlepg {
+        display: none;
+      }
+      .titlepg {
+        display: none;
+      }
+    }
+
+    #titlepg {
+        width: 100%;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      font-weight: bold;
+      color:#bbccdd;
+      text-shadow: 1px 1px #71a6d2;
+    }
+    .pic-logo {
+      height: 6em;
+      width: 6em;
+      opacity: .5;
+      box-sizing: border-box;
+      padding: 5px;
+    }
+    /*nav button styling*/
+    .navbar-nav {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      align-content: flex-end;
+     }
+    .links {
+     list-style: none;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      align-items: center;
+      background-color: #1F456E;
+      height: 6em;
+      }
+    nav li {
+      margin-left: 1em;
+    }
+    .r {
+      margin-right: 1em;
+    }
+    nav a  {
+      color: #000000;
+      font-size: 1.2rem;
+      text-decoration: none;
+    }
+    ul li {
+      font-weight: 1000;
+      box-sizing: border-box;
+      border: 1px solid #1F456E;
+      box-shadow: 2px 2px #71a6d2;
+      padding: .20rem;
+      border-radius: 5px;
+      background-color: #bbccdd;
+      display: flex;
+    }
+    .navbar-nav li a {
+      white-space: nowrap;
+    }
+    
+    li:hover {
+      background-image: url(images/Alps\ +\ Green.jpeg);
+      background-size: cover;
+      opacity: .5;
+    }
+  
+    li:hover a {
+      color: #000000;
+      text-shadow: 1px 1px #bbccdd;
+      opacity: 10;
+    }
+    /*main content area styling*/
+  .content {
+            width: 100%;
+            box-sizing: border-box;
+            background-color: #7f7f7f;
+            opacity: 75%;
+            padding-right: 2em;
+            padding-left: 2em;
+            padding-top: 10%;
+            padding-bottom: 10%;
+          }
+    .content-head {
+     padding-top: 1rem;
+     padding-bottom: 1rem;
+    }
+    h1 {
+      font-family: 'Nunito Sans', sans-serif;
+      line-height: 1.5rem;
+      padding-bottom: 5%;
+      font-weight: bold;
+    }
+    p {
+      font-family: 'Nunito Sans', sans-serif;
+      line-height: 1.75rem;
+      padding-bottom: 5%;
+    }
+    /*footer styling */
+    .activities {
+      font-family: 'Nunito Sans', sans-serif;
+      font-size: 2rem;
+      font-weight: bold;
+      border: .5rem solid #71a6d2;
+      background-color: #71a6d2;
+    }
+    .cities {
+      font-family: 'Nunito Sans', sans-serif;
+      font-size: 2rem;
+      font-weight: bold;
+      border: .5rem solid #71a6d2;
+      background-color: #71a6d2;
+    }
+    .food {
+      font-family: 'Nunito Sans', sans-serif;
+      font-size: 2rem;
+      font-weight: bold;
+      border: .5rem solid #71a6d2;
+      background-color: #71a6d2;
+    }
+    .footer {
+        padding-top: 2%;
+        padding-bottom: 2%;
+        background-color:#1F456E;
+    }
+    footer {
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+  
+    }
+    /*image styling*/
+    img {
+      width: 25rem;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      padding-left: 20px;
+      box-sizing: border-box;;
+      border-radius: 1px;
+    }
+    /*button styling*/
+    button {
+      font-family: 'Nunito Sans', sans-serif;
+      background-image: linear-gradient(to left, #71a6d2, #004368);
+    }
+    svg {
+      color: white;
+      width:1.5rem;
+      height:1.5rem;
+    }
+       /*some small screen size stuff*/
+       @media screen and (max-width: 576px) {
+        .cities {
+            font-size: 1em;
+        }
+        .activities {
+            font-size: 1em;
+        }
+        .food {
+          font-size: 1em;
+        }
+        nav a  {
+          color: #000000;
+          font-size: .8rem;
+          text-decoration: none;
+        }
+        img {
+          width: 50rem;
+        }
+       }
+       /* Some medium screen stuff*/
+       @media screen and (max-width: 768px) {
+        img {
+          width: 50rem;
+        }
+       }
+       /* advice section starts */
+       /*main-content-area*/
+       .main1 {
+        display: grid;
+        grid-template-columns: (6,1fr);
+        grid-template-rows: (6,1fr);
+       }
+       .travel {
+        grid-column: 2;
+        grid-row: 2;
+       }
+       .food2 {
+        border: 1rem solid white;
+        padding-top: 2rem;
+        color: #000000;
+        background-image: url(images/images/Swedish\ Food\ 1.jpeg);
+        background-size: contain;
+        opacity: 90%;
+        grid-column: 1 / 2;
+        grid-row: 1 / 6;
+        background-color:#7f7f7f;
+       }
+       .lodging {
+        border: 1rem solid white;
+        padding-top: 2rem;
+        opacity: 90%;
+        background-image: url(images/alpine-villaige.jpeg);
+        background-size: contain;
+        width: 100%;
+        height: 100%;
+        color: #000000;
+        grid-column: 3/ 4;
+        grid-row: 1 / 6;
+        background-color:#7f7f7f;
+       }
+       .stuff {
+        border: 1rem solid white;
+        background-image: url(images/images/Ski\ guys.jpeg);
+        background-size: contain;
+        color:#000000;
+        padding-top: 2rem;
+        opacity: 90%;
+        grid-column: 5 / 6;
+        grid-row: 1 / 6;
+        background-color: #7f7f7f;
+       }
+       .svg2 {
+        display: flex;
+        align-items: center;
+        width: 4rem;
+        height: 4rem;
+       }
+       /*font styling */
+       h2 {
+        background: #bbccdd;
+        opacity: 75%;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        font-family: 'Nunito Sans', sans-serif;
+       }
+       .eat {
+        font-size: 1.8rem;
+        text-shadow: 2px 2px solid #bbccdd;
+        opacity: 75%;
+        font-weight: bold;
+        background: #bbccdd;
+       }
+       .sleep {
+        font-size: 1.8rem;
+        text-shadow: 2px 2px solid #bbccdd;
+        opacity: 75%;
+        font-weight: bold;
+        background: #bbccdd;
+       }
+       .ski {
+        font-size: 1.8rem;
+        text-shadow: 2px 2px solid #bbccdd;
+        opacity:75%;
+        font-weight: bold;
+        background: #bbccdd; 
+       }
+       .foot2 {
+        background-color:#1F456E; 
+       }
+
+       @media screen and (max-width: 800px) {
+        .friends {
+          display: none;
+        }
+      }
+  
+
+       .friends {
+        border: .5rem solid #71a6d2;
+      background-color: #71a6d2;
+      padding: .5rem;
+      }
+    .phone {
+        border: .5rem solid #71a6d2;
+      background-color: #71a6d2;
+      padding: .5rem;
+      }
+      .email {
+        border: .5rem solid #71a6d2;
+      background-color: #71a6d2;
+      padding: .5rem;
+      }
+      .ft {
+        background:#71a6d2;
+      }
+
+      .about {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 500px;
+      }
+      
+      .about-image-container {
+        margin: 4px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+      
+      .about-image {
+        width: 100%;
+        height: auto;
+      }
+      
+      
+      .about-description {
+        margin: 4px 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+      
+      .mission {
+        height: 500px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        background-image: url(images/fp-zermatt.jpg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+      }
+      
+      .mission-image-container {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-items: center;
+      }
+
+      @media screen and (max-width: 700px) {
+        #aheader {
+          display: none;
+        }
+
+        #hisheader {
+          display: none;
+        }
+      }
+      
+      .mission-image {
+        width: auto;
+        height: 100%;
+        align-self: center;
+      }
+      
+      .history {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 500px;
+      }
+      
+      .history-image-container {
+        margin: 4px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+      
+      .history-image {
+        width: 100%;
+        height: auto;
+      }
+      
+      .history-description {
+        margin: 4px 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+      
+      .contact {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+      }
+      
+      .contact-description-container {
+        margin: 20px;
+      }
+
+      .contact-form-container {
+        margin: 20px 15px;
+      }
+      
+      .name-container {
+        margin: 10px 0px;
+      }
+      
+      .email-form {
+        margin: 10px 0px;
+      }
+      
+      .inquiry-form {
+        margin: 10px 0px;
+      }
+
+      .form-label {
+        font-size: large;
+      }
+      
+      .btn {
+        background-color: #EDBA20;
+        margin-top: 15px;
+        width: 40%;
+        align-self: center;
+      }
+
+      #tinyt {
+        color: white;
+      }

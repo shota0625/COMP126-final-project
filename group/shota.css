@@ -1,0 +1,176 @@
+body {
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+header {
+  background-color: #1F456E;
+  color: black;
+  font-size: large;
+  height:fit-content;
+}
+
+.logo{
+  border-radius: 60px;
+  float: left;
+  margin-left: 3.5%;
+}
+
+.navbar {
+  display: flex;
+  justify-content: end;
+  background-color: #1F456E;
+  height: 130px;
+}
+
+.navbar-nav {
+  margin-left: auto;
+}
+
+.nav-item {
+  background-color: #bbccdd;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 120px;
+  height: 60px;
+  margin: 5px;
+  border-radius: 10px;
+  font-weight: bolder;
+}
+
+.about {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 500px;
+}
+
+.about-image-container {
+  margin: 4px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.about-image {
+  width: 100%;
+  height: auto;
+
+}
+
+
+.about-description {
+
+  margin: 4px 20px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+
+}
+
+.mission {
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-image: url(images/mission.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.mission-image-container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+}
+
+.mission-image {
+  width: auto;
+  height: 100%;
+  align-self: center;
+}
+
+.mission-text {
+  font-weight: 600;
+  font-size: larger;
+}
+
+.history {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 500px;
+}
+
+.history-image-container {
+  margin: 4px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.history-image {
+  width: 100%;
+  height: auto;
+
+}
+
+
+.history-description {
+
+  margin: 4px 20px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+
+}
+
+
+.contact {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.contact-description-container {
+  margin: 20px 70px;
+}
+
+.contact-form-container {
+  margin: 20px 15px;
+}
+
+.name-container {
+  margin: 10px 0px;
+}
+
+.email-form {
+  margin: 10px 0px;
+}
+
+.inquiry-form {
+  margin: 10px 0px;
+}
+
+.name-container {
+  font-size: large;
+}
+
+.form-label {
+  font-size: large;
+}
+
+.btn {
+  font-size: large;
+  background-color: #EDBA20;
+  margin-top: 15px;
+  width: 40%;
+  align-self: center;
+}
